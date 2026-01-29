@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu</title>
+  <style>
+    /* Basic CSS to make it look like a menu */
+    .nav-container {
+      background-color: #333;
+      padding: 1rem;
+    }
+    
+    .nav-list {
+      list-style-type: none; /* Removes bullet points */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Makes links go horizontal */
+      gap: 20px; /* Space between links */
+      align-items: center;
+    }
+
+    .nav-list a {
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .nav-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* Pushes the controls to the right */
+    .controls {
+      margin-left: auto; 
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav-container">
+    
+    <ul class="nav-list">
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="ContactUs.html">Menu</a></li>
+      <li><a href="Products.html">Products</a></li>
+
+      <li class="controls">
+        <button id="mute-toggle" aria-pressed="false">Sound: On</button>
+        <button id="btn">Test Sound</button>
+      </li>
+    </ul>
+
+    <audio id="link-sfx" src="click.mp3" preload="auto"></audio>
+  </nav>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p>Welcome to the contact page.</p>
+  </main>
+
+</body>
+</html>
