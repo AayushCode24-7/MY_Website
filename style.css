@@ -1,0 +1,85 @@
+/* Global Styles */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgba(75,62,62,0.5), rgba(0,0,0,0.5)), url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps background still while scrolling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.breadcrumbs a {
+  display: inline;
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.breadcrumbs a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Glass Container */
+.nav-container, .content-container {
+  background: rgba(255,255,255,0.1);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Links & Buttons */
+a {
+  display: block;
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 1.34rem;
+  margin: 15px 0;
+  transition: all 0.25s ease;
+}
+
+a:hover {
+  transform: translateY(-5px) scale(1.05);
+  color: #d7ea0c;
+}
+
+#mute-toggle, #btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #ffcc00;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
